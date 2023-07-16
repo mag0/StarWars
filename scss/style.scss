@@ -20,10 +20,11 @@ body{
     .header{
         background-color: black;
         border-bottom: 1px solid white;
+        width: 100%;
     
         .titulo{
             text-align: center;
-            padding: 40px 0;
+            padding: 3rem 0;
             img{
                 width: 300px;
                 height: 100px;
@@ -36,10 +37,10 @@ body{
             nav{
                 display: flex;
                 justify-content: center;
-                padding: 40px;
+                padding: 3rem;
                 li{
                     list-style: none;
-                    padding: 10px 25px;
+                    padding: 0.8rem;
                     a{
                         font-size: 1.5rem;
                         color: white;
@@ -55,7 +56,7 @@ body{
     }
 
     main{
-        margin: 0 300px;
+        margin: 3rem;
 
         section{
             margin: 60px 0;
@@ -65,10 +66,15 @@ body{
                     text-align: center;
                     color: rgba(255, 255, 0, 0.767);
                     font-weight: 900;
+                    div{
+                        background-color: rgba(0, 0, 0, 0.575);
+                        margin: 3rem 0;
+                        padding: 1rem;
+                    }
                     
                     h2{
                         font-size: 2.5rem;
-                        padding: 10px 0;
+                        padding: .8rem 0;
                     }
                     h3{
                         font-size: 2.5rem;
@@ -79,9 +85,6 @@ body{
                     }
             }
         }
-
-        
-
     }
 
     footer{
@@ -109,21 +112,50 @@ body{
 }
 
 
+@media screen and (max-width: 425px) {
+    .container{
+        .header{
+        .nav{
+            
+            nav{
+                flex-direction: column;
+                align-items: center;
+                padding: 2rem;
+            li{
+                list-style: none;
+                padding: 0.5rem;
+                a{
+                    font-size: 1.2rem; 
+                }
+                a:hover{
+                    color: none;
+                }
+            }
+            }
+        }
+    }
 
-//PAGINA 2
+    main{
+        margin: 0;
 
-.container{
-   main{
-    
-    margin:  3rem;
-    #peliculas, #naves, #planetas{
-        
-        div{
-            background-color: rgba(0, 0, 0, 0.575);
-            margin: 3rem 0;
-            padding: 1rem;
-        } 
+        section{
+            div{
+                    font-weight: 600;
+
+                    h2{
+                        font-size: 2rem;
+                        padding: .8rem 0;
+                    }
+                    h3{
+                        font-size: 2rem;
+                        padding: 1rem;
+                    }
+                    p{
+                        font-size: 1rem;
+                    }
+            }
+        }
+    }
     }
     
-} 
 }
